@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-font:"Nunito", sans-serif;
+    --secondary-font:"Oswald", sans-serif;
+    --heading-color:#0D4533;
+    --button-bg:#0CA57B;
+}
+.account-profile {
+    margin-top: 50px;
+}
+.account-profile .nav-pills .nav-link {
+    color: var(--Black, #212121);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: var(--primary-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16.583px;
+    text-align: left;
+}
+.account-profile .nav-pills .nav-link.active {
+    color: var(--Accent, #0CA57B);
+    background-color: transparent;
+}
+.account-profile .nav-pills .nav-link:hover {
+    color: var(--Accent, #0CA57B);
+    background-color: transparent;
+}
+#v-pills-tab {
+    flex: 1 1 200px;
+}
+#v-pills-tabContent {
+    flex: 1 1 800px;
+}
+.account-profile label.form-label {
+    color: var(--Black, #212121);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: var(--primary-font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16.583px;
+}
+.account-profile input.form-control {
+    border-radius: 4.146px;
+    border: 0.829px solid var(--Dark-Gray, #9FA3AA);
+    background: var(--White, #FFF);
+}
+.account-profile select {
+    border-radius: 4.146px;
+    border: 0.829px solid var(--Dark-Gray, #9FA3AA);
+    background: var(--White, #FFF);
+    color: var(--Dark-Gray, #9FA3AA);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: var(--primary-font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    height: 40px;
+}
+.mb-10px {
+    margin-bottom: 10px;
+}
+.mt-20px {
+    margin-top: 20px;
+}
+.account-profile ::placeholder {
+    color: var(--Dark-Gray, #9FA3AA);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: var(--primary-font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.583px;
+}
+.profile-form-wrapper {
+    max-width: 500px;
+}
+.account-profile p.delete-account {
+    color: var(--Action-Red, #FF3A29);
+    text-align: right;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: var(--primary-font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0px;
+    cursor: pointer;
+}
+.account-profile button.save-btn {
+    border-radius: 13.267px;
+    background: var(--Accent, #0CA57B);
+    color: var(--White, #FFF);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: var(--primary-font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0px;
+    height: 44px;
+    padding: 20px 25px;
+    border: var(--Accent, #0CA57B);
+}
+.text-align-right {
+    text-align: right;
+}
+.address-wrapper p {
+    color: var(--Black, #212121);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: var(--primary-font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+}
+.address-wrapper p span {
+    vertical-align: text-bottom;
+}
+.order-wrapper {
+    max-width: 500px;
+}
+.order-data h3 {
+    color: var(--Black, #212121);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: var(--primary-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16.583px;
+    margin: 0;
+}
+.order-data p {
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: var(--primary-font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12.438px;
+    margin: 0;
+}
+.order-price h6 {
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: var(--primary-font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16.583px;
+    text-align: right;
+}
+.order-price a {
+    border-radius: 13.267px;
+    background: var(--Accent, #0CA57B);
+    height: 25px;
+    color: var(--White, #FFF);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: var(--primary-font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: none;
+    width: 102px;
+    display: block;
+    text-align: center;
+    line-height: 25px;
+}
+.order-info .order-img img{
+    border-radius: 14px 0px 0px 14px;
+}
+.order-info {
+    border-bottom: 1px solid #9FA3AA;
+    padding: 20px 0px;
+    background: var(--White, #FFF);
+}
+.order-data {
+    margin-left: 15px;
+}
+.order-info:last-child {
+    border-bottom: none;
+}
+
+
+
+@media (max-width: 767px) {
+    .flex-md-column {
+        flex-direction: row !important;
+    }
+    #v-pills-tab {
+        justify-content: center;
+    }
+    .account-profile-wrapper {
+        flex-wrap: wrap;
+    }
+  }
